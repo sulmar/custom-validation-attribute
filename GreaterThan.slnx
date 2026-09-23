@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GreaterThan.Tests/GreaterThan.Tests.csproj" />
+  <Project Path="GreaterThan/GreaterThan.csproj" />
+</Solution>
