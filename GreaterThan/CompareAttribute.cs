@@ -9,7 +9,7 @@ public abstract class CompareAttribute(string otherProperty, string errorMessage
 
     protected abstract bool Predicate(int value);
 
-    protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
+    protected sealed override ValidationResult? IsValid(object? value, ValidationContext validationContext)
     {
         // 1. Wyszukanie właściwości po nazwie:
         var property = validationContext.ObjectType.GetProperty(OtherProperty, BindingFlags.Instance | BindingFlags.Public);
