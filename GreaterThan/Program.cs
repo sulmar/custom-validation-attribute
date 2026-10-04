@@ -3,7 +3,8 @@
 var reservation = new Reservation
 {
     StartDate = new DateTime(2026, 9, 23),
-    EndDate = new DateTime(2026, 9, 22) // Celowo wcześniejsza data
+    EndDate = new DateTime(2026, 9, 22), // Celowo wcześniejsza data
+    Surname = "Foo"
 };
 
 var results = new List<ValidationResult>();
