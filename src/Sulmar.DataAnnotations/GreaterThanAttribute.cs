@@ -1,4 +1,4 @@
-namespace GreaterThan;
+namespace Sulmar.DataAnnotations;
 
 // Wzorzec projektowy Template Method
 

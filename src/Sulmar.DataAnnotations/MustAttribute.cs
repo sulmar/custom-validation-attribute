@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 using System.Runtime.ExceptionServices;
 
-namespace GreaterThan;
+namespace Sulmar.DataAnnotations;
 
 // Wywołuje statyczną metodę bool (obiekt, wartość) — odpowiednik Must((obiekt, wartość) => ...) z FluentValidation.
 [AttributeUsage(AttributeTargets.Property)]

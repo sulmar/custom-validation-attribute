@@ -1,4 +1,4 @@
-namespace GreaterThan;
+namespace Sulmar.DataAnnotations;
 
 [AttributeUsage(AttributeTargets.Property)]
 public sealed class LessThanAttribute(string otherProperty)

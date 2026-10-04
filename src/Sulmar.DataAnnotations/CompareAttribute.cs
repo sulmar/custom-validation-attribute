@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace GreaterThan;
+namespace Sulmar.DataAnnotations;
 
 public abstract class CompareAttribute(string otherProperty, string errorMessage) : ValidationAttribute(errorMessage)
 {

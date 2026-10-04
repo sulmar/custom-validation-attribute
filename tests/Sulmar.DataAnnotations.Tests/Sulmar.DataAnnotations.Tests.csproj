@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GreaterThan\GreaterThan.csproj" />
+    <ProjectReference Include="..\..\src\Sulmar.DataAnnotations\Sulmar.DataAnnotations.csproj" />
   </ItemGroup>
 
 </Project>

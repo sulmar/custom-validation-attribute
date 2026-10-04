@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/Sulmar.DataAnnotations/Sulmar.DataAnnotations.csproj" />
+  <Project Path="tests/Sulmar.DataAnnotations.Tests/Sulmar.DataAnnotations.Tests.csproj" />
+</Solution>

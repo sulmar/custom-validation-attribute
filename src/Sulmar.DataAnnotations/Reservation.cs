@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-using GreaterThan;
+using Sulmar.DataAnnotations;
 
 public class Reservation
 {

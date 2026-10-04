@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
-using GreaterThan;
+using Sulmar.DataAnnotations;
 
-namespace GreaterThan.Tests;
+namespace Sulmar.DataAnnotations.Tests;
 
 public class MustAttributeTests
 {

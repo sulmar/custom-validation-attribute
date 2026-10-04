@@ -1,4 +1,4 @@
-namespace GreaterThan;
+namespace Sulmar.DataAnnotations;
 
 [AttributeUsage(AttributeTargets.Property)]
 public sealed class ExclusiveBetweenAttribute(object from, object to)

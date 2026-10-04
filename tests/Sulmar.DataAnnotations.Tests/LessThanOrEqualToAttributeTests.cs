@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace GreaterThan.Tests;
+namespace Sulmar.DataAnnotations.Tests;
 
 public class LessThanOrEqualToAttributeTests
 {
@@ -90,7 +90,7 @@ public class LessThanOrEqualToAttributeTests
             EndDate = new DateTime(2026, 9, 24)
         };
         var context = new ValidationContext(model) { MemberName = nameof(Reservation.EndDate) };
-        var attribute = new global::GreaterThan.LessThanOrEqualToAttribute(nameof(Reservation.StartDate))
+        var attribute = new Sulmar.DataAnnotations.LessThanOrEqualToAttribute(nameof(Reservation.StartDate))
         {
             ErrorMessage = "{0} <= {1}"
         };
@@ -103,7 +103,7 @@ public class LessThanOrEqualToAttributeTests
     public void MissingMemberName_ProducesErrorWithoutMembers()
     {
         var context = new ValidationContext(new Values { Other = 1 }) { DisplayName = "Wartość" };
-        var result = new global::GreaterThan.LessThanOrEqualToAttribute("Other").GetValidationResult(2, context);
+        var result = new Sulmar.DataAnnotations.LessThanOrEqualToAttribute("Other").GetValidationResult(2, context);
         Assert.NotNull(result);
         Assert.Empty(result.MemberNames);
     }
@@ -137,7 +137,7 @@ public class LessThanOrEqualToAttributeTests
     private static ValidationResult? Validate(object? value, object model, string otherProperty = "Other")
     {
         var context = new ValidationContext(model) { MemberName = "Value", DisplayName = "Value" };
-        return new global::GreaterThan.LessThanOrEqualToAttribute(otherProperty).GetValidationResult(value, context);
+        return new Sulmar.DataAnnotations.LessThanOrEqualToAttribute(otherProperty).GetValidationResult(value, context);
     }
 
     public class Values
@@ -159,7 +159,7 @@ public class LessThanOrEqualToAttributeTests
         public DateTime StartDate { get; set; }
 
         [Display(Name = "Data końca")]
-        [global::GreaterThan.LessThanOrEqualTo(nameof(StartDate))]
+        [Sulmar.DataAnnotations.LessThanOrEqualTo(nameof(StartDate))]
         public DateTime EndDate { get; set; }
     }
 }

@@ -49,7 +49,7 @@ Projekt zawiera te atrybuty oraz testy xUnit sprawdzające porównania liczb i d
 
 ## Uruchomienie
 
-Wymagany jest .NET 10 SDK. W katalogu `GreaterThan.Tests` uruchom:
+Wymagany jest .NET 10 SDK. W katalogu głównym repozytorium uruchom:
 
 ```bash
 dotnet test

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace GreaterThan;
+namespace Sulmar.DataAnnotations;
 
 // Wzorzec projektowy Template Method — analogicznie do CompareAttribute.
 public abstract class BetweenAttribute : ValidationAttribute
